@@ -1,0 +1,65 @@
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    /* background-color: rgb(230, 241, 238); */
+    padding: 5px;
+}
+
+/* react tab animation starts */
+
+.tab-btn{
+    display: flex;
+    margin: 0 auto;
+    /* background-color: red; */
+    width: 60%;
+    justify-content: center;
+}
+
+.btn, .clicked-btn{
+   width: 10rem;
+   padding: 10px 10px;
+   border: none;
+   margin: 0 10px;
+   cursor: pointer;
+   border-radius: 8px;  
+}
+
+.btn{
+    background-color: black;
+    color: white;
+ }
+.clicked-btn{
+    background-color: rgb(72, 57, 238);
+   color: white;
+}
+
+
+.content{
+    display: none;
+    
+}
+.show-content{
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 10px 5px;
+    /* background-color: rgb(227, 225, 225); */
+    box-shadow: 1px 1px 10px 1px lightgray;
+    border-radius: 10px;
+    animation: fadeIn 0.3s ease-in backwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  /* react tab animation endpoint */

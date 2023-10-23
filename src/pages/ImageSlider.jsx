@@ -38,8 +38,8 @@ const ImageSlider = () => {
                     <div className="container-dots">
                         {
                             Array.from({ length: 5 }).map((item, index) => (
-                                <div 
-                                    style={{cursor:"pointer"}}
+                                <div
+                                    style={{ cursor: "pointer" }}
                                     key={index}
                                     className={slideIndex === index ? "dot-active" : "dot"}
                                     onClick={() => moveDot(index)}

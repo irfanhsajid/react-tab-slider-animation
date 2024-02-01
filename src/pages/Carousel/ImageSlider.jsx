@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import BtnSlider from '../components/Buttons/BtnSlider';
-import sliderDetails from '../dataSlider';
+import BtnSlider from '../../components/Buttons/BtnSlider';
+import sliderDetails from '../../dataSlider';
 
 const ImageSlider = () => {
     const [slideIndex, setSlideIndex] = useState(0);

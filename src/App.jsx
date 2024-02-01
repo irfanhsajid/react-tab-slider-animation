@@ -1,19 +1,22 @@
 
-import ReactTab from './ReactTab'
-import CSSAnimation from './pages/CSSAnimation'
-import ImageSlider from './pages/ImageSlider'
+import ReactTab from './pages/TabChanging/ReactTab'
+import CSSAnimation from './pages/Animation/CSSAnimation'
 
+import ImageSlider from './pages/Carousel/ImageSlider'
+import NavBar from './components/NavBar/NavBar'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home/Home'
 function App() {
-
 
   return (
     <>
-      <h1 style={{ textAlign: 'center', color: 'tomato' }}>Bismillahir Rahmanir Rahim</h1>
-      <ReactTab />
-      <br />
-      <ImageSlider/>
-      <br />
-      <CSSAnimation/>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/tabs' element={<ReactTab/>}/>
+        <Route path='/slider' element={<ImageSlider/>}/>
+        <Route path='/animation' element={<CSSAnimation/>}/>
+      </Routes>
     </>
   )
 }
